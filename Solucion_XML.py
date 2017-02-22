@@ -5,5 +5,9 @@ root = document.getroot()
 poke = root.xpath("//pokedex/pokemon")
 tipo = root.findall("pokemon/type")
 
+lista = []
 for l in tipo:
-  print l.getparent().find("name").text, l.text, "\n"
+  if l.getparent().find("name").text not in lista:
+    print "\n", l.getparent().find("name").text
+    lista.append(l.getparent().find("name").text)
+  print l.text
