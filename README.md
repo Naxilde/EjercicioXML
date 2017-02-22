@@ -2,7 +2,7 @@
 
 Pokedex xml excersice
 
-1. Crea una lista con los nombres de los pokemons que pertenecen al tipo planta y cuyo grupo huevo sea monstruo.
+1. Pide por teclado un tipo y muestra una lista con los nombres de los pokemons que pertenecen al tipo seleccionado.
 
 2. Lista los tipos de pokemon que existen y cuantos pokemons hay de cada tipo.
 
