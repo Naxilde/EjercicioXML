@@ -2,7 +2,7 @@
 
 Pokedex xml excersice
 
-1. Muestra en una lista todos los pokemons que pertenecen al tipo planta.
+1. Muestra en una lista todos los pokemons ordenados por tipo.
 
 2. Lista los tipos de pokemon que existen y cuantos pokemons hay de cada tipo.
 
