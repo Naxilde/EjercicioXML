@@ -2,7 +2,7 @@
 
 Pokedex xml excersice
 
-1. Muestra en una lista todos los pokemons ordenados por tipo.
+1. Muestra en una lista todos los pokemons con sus tipo/s.
 
 2. Lista los tipos de pokemon que existen y cuantos pokemons hay de cada tipo.
 
