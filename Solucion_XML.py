@@ -25,3 +25,10 @@ for c in tipo_traduccion:
     tipos.append(c)
     
 # Ejercicio 3
+pes_min=float(raw_input("Introduce el peso mínimo: "))
+pes_max=float(raw_input("Introduce el peso máximo: "))
+for p in poke:
+  if float(p.find("weight").text) >= pes_min and float(p.find("weight").text) <= pes_max:
+    print p.find("name").text
+    
+# Ejercicio 4
