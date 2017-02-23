@@ -83,4 +83,9 @@ pokemon1=raw_input("Nombre del primer pokemon: ")
 pokemon2=raw_input("Nombre del segundo pokemon: ")
 for g in poke:
   if g.find("name")=pokemon1:
-    print g.find("")
+    print g.find("stats/HP").text
+    print g.find("stats/ATK").text
+    print g.find("stats/DEF").text
+    print g.find("stats/SAT").text
+    print g.find("stats/SDF").text
+    print g.find("stats/SPD").text
