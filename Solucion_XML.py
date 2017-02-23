@@ -54,7 +54,7 @@ for y in tipo:
       filtro_nom.append(y.getparent().find("name").text)
     print y.text
 
-
+print "\n", "Evolucion/es:", "\n"
 for b in evoluciones:
   if b.getparent().getparent().getparent().find("name").text==busqueda:
     if len(filtro_evol) > 1 and b.getparent().getparent().getparent().get("id") != b.getparent().get("id"):
@@ -64,10 +64,18 @@ for b in evoluciones:
         else:
             print "Proviene de", b.text
       else:
-        if nvl_busqueda < b.getparent().find("lvl").text:
-          print "Evoluciona a", b.text, "al nivel", b.getparent().find("lvl").text
-        elif b.getparent().find("lvl") is not None:
-          print "Proviene de", b.text, "al nivel", nvl_busqueda 
+       if nvl_busqueda < b.getparent().find("lvl").text:
+         print "Evoluciona a", b.text, "al nivel", b.getparent().find("lvl").text
+       elif b.getparent().find("lvl") is not None:
+         print "Proviene de", b.text, "al nivel", nvl_busqueda 
     if len(filtro_evol) == 1:
       print "El pokemon buscado no evoluciona ni proviene de otro pokemon"
 
+movimientos = root.findall("pokemon/moves/move")
+print "\n", "Movimientos por nivel:", "\n"
+for m in movimientos:
+  if m.getparent().getparent().find("name").text == busqueda:
+    if m.get("type") == "level-up":
+      print m.find("name").text, "al nivel", m.find("lvl").text
+
+# Ejercicio 5
