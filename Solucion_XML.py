@@ -36,15 +36,15 @@ evoluciones = root.findall("pokemon/evolutions/evolution/name")
 busqueda = raw_input("Nombre del pokemon a buscar: ")
 
 filtro_evol = []
-for b in evoluciones:
-  if b.getparent().getparent().getparent().find("name").text==busqueda:
-    filtro_evol.append(b.text)
+for v in evoluciones:
+  if v.getparent().getparent().getparent().find("name").text==busqueda:
+    filtro_evol.append(v.text)
 
 nvl_busqueda = 0
-for b in evoluciones:
-  if b.getparent().getparent().getparent().find("name").text==busqueda:
-    if b.getparent().getparent().getparent().get("id") == b.getparent().get("id") and b.getparent().find("lvl") is not None:
-      nvl_busqueda=b.getparent().find("lvl").text
+for e in evoluciones:
+  if e.getparent().getparent().getparent().find("name").text==busqueda:
+    if e.getparent().getparent().getparent().get("id") == e.getparent().get("id") and b.getparent().find("lvl") is not None:
+      nvl_busqueda=e.getparent().find("lvl").text
 
 filtro_nom = []
 for y in tipo:
@@ -79,3 +79,8 @@ for m in movimientos:
       print m.find("name").text, "al nivel", m.find("lvl").text
 
 # Ejercicio 5
+pokemon1=raw_input("Nombre del primer pokemon: ")
+pokemon2=raw_input("Nombre del segundo pokemon: ")
+for g in poke:
+  if g.find("name")=pokemon1:
+    print g.find("")
